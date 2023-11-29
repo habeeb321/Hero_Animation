@@ -91,6 +91,7 @@ class ProfileScreen extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                   color: Color(0XFF86BED8),
                                   fontFamily: 'BungeeOutline',
+                                  decoration: TextDecoration.none,
                                 ),
                               ),
                             ),
@@ -106,6 +107,7 @@ class ProfileScreen extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                   color: Color(0XFF86BED8),
                                   fontFamily: 'BungeeOutline',
+                                  decoration: TextDecoration.none,
                                 ),
                               ),
                             ),
@@ -174,6 +176,7 @@ class ProfileScreen extends StatelessWidget {
                                     color: Color(0XFF7AD6DE),
                                     fontSize: 12,
                                     fontWeight: FontWeight.bold,
+                                    decoration: TextDecoration.none,
                                   ),
                                 ),
                                 Text(
@@ -182,6 +185,7 @@ class ProfileScreen extends StatelessWidget {
                                     color: Color(0XFF7AD6DE),
                                     fontSize: 12,
                                     fontWeight: FontWeight.bold,
+                                    decoration: TextDecoration.none,
                                   ),
                                 ),
                                 Text(
@@ -190,6 +194,7 @@ class ProfileScreen extends StatelessWidget {
                                     color: Color(0XFF7AD6DE),
                                     fontSize: 25,
                                     fontWeight: FontWeight.bold,
+                                    decoration: TextDecoration.none,
                                   ),
                                 ),
                               ],
@@ -281,6 +286,7 @@ class ProfileScreen extends StatelessWidget {
                                     color: Color(0XFF7AD6DE),
                                     fontSize: 12,
                                     fontWeight: FontWeight.bold,
+                                    decoration: TextDecoration.none,
                                   ),
                                 ),
                                 Text(
@@ -289,6 +295,7 @@ class ProfileScreen extends StatelessWidget {
                                     color: Color(0XFF7AD6DE),
                                     fontSize: 12,
                                     fontWeight: FontWeight.bold,
+                                    decoration: TextDecoration.none,
                                   ),
                                 ),
                                 Text(
@@ -297,6 +304,7 @@ class ProfileScreen extends StatelessWidget {
                                     color: Color(0XFF7AD6DE),
                                     fontSize: 25,
                                     fontWeight: FontWeight.bold,
+                                    decoration: TextDecoration.none,
                                   ),
                                 ),
                               ],

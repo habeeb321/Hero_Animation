@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 50),
                   const Hero(
-                    tag: 'CRISTIANO', // Use a unique tag for each Hero widget
+                    tag: 'CRISTIANO',
                     child: GradientText(
                       'CRISTIANO',
                       style: TextStyle(
@@ -58,6 +58,7 @@ class HomeScreen extends StatelessWidget {
                         color: Color(0xff3FB4D4),
                         fontFamily: 'AudioWide',
                         letterSpacing: 8,
+                        decoration: TextDecoration.none,
                       ),
                       gradient: LinearGradient(colors: [
                         Color(0xff5CC5C7),
@@ -80,6 +81,7 @@ class HomeScreen extends StatelessWidget {
                           color: Color(0xff3FB4D4),
                           fontFamily: 'AudioWide',
                           letterSpacing: 8,
+                          decoration: TextDecoration.none,
                         ),
                         gradient: LinearGradient(colors: [
                           Color(0xffED988D),
@@ -99,11 +101,22 @@ class HomeScreen extends StatelessWidget {
                               GestureDetector(
                                 onTap: () {
                                   Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) =>
-                                            const ProfileScreen(),
-                                      ));
+                                    context,
+                                    PageRouteBuilder(
+                                      pageBuilder: (context, animation,
+                                              secondaryAnimation) =>
+                                          const ProfileScreen(),
+                                      transitionsBuilder: (context, animation,
+                                          secondaryAnimation, child) {
+                                        return FadeTransition(
+                                          opacity: animation,
+                                          child: child,
+                                        );
+                                      },
+                                      transitionDuration:
+                                          const Duration(seconds: 1),
+                                    ),
+                                  );
                                 },
                                 child: Hero(
                                   tag: 'PROFILE',
@@ -122,6 +135,7 @@ class HomeScreen extends StatelessWidget {
                                           color: Color(0XFF7AD6DE),
                                           fontSize: 12,
                                           fontWeight: FontWeight.bold,
+                                          decoration: TextDecoration.none,
                                         ),
                                       ),
                                     ],
@@ -165,6 +179,7 @@ class HomeScreen extends StatelessWidget {
                                         color: Color(0XFF7AD6DE),
                                         fontSize: 12,
                                         fontWeight: FontWeight.bold,
+                                        decoration: TextDecoration.none,
                                       ),
                                     ),
                                   ],
@@ -193,6 +208,7 @@ class HomeScreen extends StatelessWidget {
                                     color: Color(0XFF7AD6DE),
                                     fontSize: 12,
                                     fontWeight: FontWeight.bold,
+                                    decoration: TextDecoration.none,
                                   ),
                                 ),
                               ],
