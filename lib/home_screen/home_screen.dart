@@ -190,7 +190,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         Positioned(
                           top: 52,
-                          left: 36,
+                          left: 54,
                           child: Hero(
                             tag: 'EVENTS',
                             child: Stack(
@@ -217,7 +217,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         Positioned(
                           top: 154,
-                          left: 36,
+                          left: 54,
                           child: Stack(
                             alignment: Alignment.center,
                             children: [
@@ -240,7 +240,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         Positioned(
                           top: 52,
-                          right: 36,
+                          right: 54,
                           child: Stack(
                             alignment: Alignment.center,
                             children: [
@@ -263,7 +263,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         Positioned(
                           top: 154,
-                          right: 36,
+                          right: 54,
                           child: Stack(
                             alignment: Alignment.center,
                             children: [
